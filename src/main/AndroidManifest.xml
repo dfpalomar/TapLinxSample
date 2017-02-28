@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  package="com.yoti.nxp.test"
+  android:versionCode="9"
+  android:versionName="9">
+
+  <uses-permission android:name="android.permission.NFC"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+  <uses-feature
+    android:name="android.hardware.nfc"
+    android:required="true"/>
+
+  <supports-screens
+    android:anyDensity="true"
+    android:largeScreens="true"
+    android:normalScreens="true"
+    android:resizeable="false"
+    android:smallScreens="true"
+    android:xlargeScreens="true"/>
+
+  <application
+    android:allowBackup="false"
+    android:description="@string/app_name"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:logo="@mipmap/ic_launcher"
+    android:theme="@android:style/Theme.DeviceDefault.Light"
+    tools:replace="android:allowBackup">
+    <activity
+      android:label="@string/app_name"
+      android:name="com.nxp.sampletaplinx.MainActivity"
+      android:screenOrientation="portrait">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+        <action android:name="android.nfc.action.TAG_DISCOVERED"/>
+        <action android:name="android.nfc.action.TECH_DISCOVERED"/>
+
+        <category android:name="android.intent.category.DEFAULT"/>
+        <!-- <data android:mimeType="text/plain" /> -->
+      </intent-filter>
+    </activity>
+  </application>
+
+</manifest>

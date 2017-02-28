@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sample Application</string>
+    <string name="action_settings">Settings</string>
+    <string name="info_string">Tap any MIFARE / NTAG / ICODE tag!</string>
+    <string name="desc">Launcher image</string>
+
+    <string name="Note">Note: This sample app changes contents on tapped cards</string>
+    <string name="about">About</string>
+    <string name="about_text">This sample demonstrates use of TapLinx SDK.Please visit TapLinx SDK page of www.mifare.net for this application source and more details.</string>
+    <string name="checkbox_text">Allow write operations.</string>
+    <string name="write_ops_title">"Overwrite warning!!"</string>
+    <string name="write_ops_message">Please note by selecting this option application writes sample data to the tapped card if the card key is factory default</string>
+</resources>

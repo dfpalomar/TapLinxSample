@@ -1,0 +1,36 @@
+# IntelliJ
+*.iml
+.idea/*
+!.idea/fileTemplates
+
+# Built application files
+*.apk
+*.ap_
+
+# Files for the Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log Files
+*.log
+
+# Calabash device local configuration
+calabash/config.xml
+calabash/calabash-common
+
+.DS_Store
+
+scripts/report/
